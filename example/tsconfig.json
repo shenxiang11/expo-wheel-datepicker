@@ -1,0 +1,10 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "paths": {
+      "@shen11/expo-wheel-datepicker": ["../src/index"],
+      "@shen11/expo-wheel-datepicker/*": ["../src/*"]
+    }
+  }
+}
