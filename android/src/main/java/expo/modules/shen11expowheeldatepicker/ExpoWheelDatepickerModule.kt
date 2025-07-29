@@ -40,11 +40,11 @@ class ExpoWheelDatepickerModule : Module() {
     // the view definition: Prop, Events.
     View(ExpoWheelDatepickerView::class) {
       // Defines a setter for the `url` prop.
-      Prop("url") { view: ExpoWheelDatepickerView, url: URL ->
-        view.webView.loadUrl(url.toString())
-      }
+      // Prop("url") { view: ExpoWheelDatepickerView, url: URL ->
+      //  view.webView.loadUrl(url.toString())
+      // }
       // Defines an event that the view can send to JavaScript.
-      Events("onLoad")
+      Events("onDateChange")
     }
   }
 }
